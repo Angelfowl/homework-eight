@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: rgb(53, 53, 53);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,p {
+    margin-bottom: 16px;
+}
+
+@font-face {
+    font-family: Creepster;
+    src: url(../css/fonts/Creepster-Regular.ttf);
+}
+
+@font-face {
+    font-family: IndieFlower;
+    src: url(../css/fonts/IndieFlower-Regular.ttf);
+}
+
+@font-face {
+    font-family: Newspaper;
+    src: url(../css/fonts/NewspaperPersonalUseSemiExpandedRegular-7B0GB.ttf);
+}

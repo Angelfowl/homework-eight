@@ -1,0 +1,586 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: rgb(53, 53, 53);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: Creepster;
+  src: url(../css/fonts/Creepster-Regular.ttf);
+}
+@font-face {
+  font-family: IndieFlower;
+  src: url(../css/fonts/IndieFlower-Regular.ttf);
+}
+@font-face {
+  font-family: Newspaper;
+  src: url(../css/fonts/NewspaperPersonalUseSemiExpandedRegular-7B0GB.ttf);
+}
+nav {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav .links {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 10px;
+}
+nav .links a {
+  font-family: IndieFlower;
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+nav .logo {
+  font-family: Creepster;
+  font-size: 24px;
+  letter-spacing: 2px;
+  color: #fff;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1130px) {
+  nav {
+    height: 100px;
+  }
+  nav .links {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  nav .links a {
+    padding: 0 20px;
+  }
+}
+@media only screen and (max-width: 490px) {
+  nav {
+    height: 150px;
+  }
+}
+.haunted {
+  width: 100%;
+  min-height: 200px;
+  position: relative;
+}
+.haunted .hero {
+  width: 100%;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+.haunted .hero .hero-img {
+  width: 100%;
+  height: 350px;
+  background-image: url(../images/daniel-jensen-NMk1Vggt2hg-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  opacity: 75%;
+  position: absolute;
+}
+.haunted .hero .hero-callout {
+  width: 550px;
+  height: 100px;
+  text-align: center;
+  position: absolute;
+  margin-top: 50px;
+}
+.haunted .hero .hero-callout h1 {
+  font-family: Creepster;
+  font-size: 60px;
+  color: #880808;
+}
+.haunted .hero .hero-callout p {
+  font-family: IndieFlower;
+  font-size: 30px;
+  color: #fff;
+  margin-top: 30px;
+}
+.haunted .headliner {
+  width: 50%;
+  min-height: 150px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.haunted .headliner .headline {
+  background-color: lightgray;
+  border: 3px solid #000;
+}
+.haunted .headliner .headline h2 {
+  font-family: Newspaper;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 40px;
+  text-transform: uppercase;
+}
+.haunted .newspaper {
+  width: 100%;
+  min-height: 300px;
+  background-color: lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 3px solid #000;
+  margin-bottom: 50px;
+}
+.haunted .newspaper .left-column {
+  width: 50%;
+  min-height: 300px;
+  border-right: 1px solid #000;
+}
+.haunted .newspaper .left-column img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.haunted .newspaper .left-column h3 {
+  font-family: Newspaper;
+  font-size: 24px;
+  color: #880808;
+  text-align: center;
+  padding-top: 15px;
+}
+.haunted .newspaper .left-column p {
+  font-family: IndieFlower;
+  font-size: 16px;
+  color: #880808;
+  padding-left: 14px;
+}
+.haunted .newspaper .right-column {
+  width: 50%;
+  min-height: 300px;
+}
+.haunted .newspaper .right-column img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.haunted .newspaper .right-column h3 {
+  font-family: Newspaper;
+  font-size: 24px;
+  color: #880808;
+  text-align: center;
+  padding-top: 15px;
+}
+.haunted .newspaper .right-column p {
+  font-family: IndieFlower;
+  font-size: 16px;
+  color: #880808;
+  padding-left: 14px;
+}
+
+.about {
+  width: 100%;
+  min-height: 200px;
+  margin: 0 auto;
+}
+.about .headliner {
+  width: 50%;
+  min-height: 150px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.about .headliner .headline {
+  background-color: lightgray;
+  border: 3px solid #000;
+}
+.about .headliner .headline h2 {
+  font-family: Newspaper;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 40px;
+  text-transform: uppercase;
+}
+.about .headliner .headline img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+  opacity: 75%;
+}
+.about .newspaper {
+  width: 50%;
+  min-height: 300px;
+  background-color: lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  border: 3px solid #000;
+  margin-bottom: 50px;
+}
+.about .newspaper .left-column {
+  width: 50%;
+  min-height: 300px;
+  border-right: 1px solid #000;
+}
+.about .newspaper .left-column img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.about .newspaper .left-column h3 {
+  font-family: Newspaper;
+  font-size: 24px;
+  color: #880808;
+  text-align: center;
+  padding-top: 15px;
+}
+.about .newspaper .left-column p {
+  font-family: IndieFlower;
+  font-size: 16px;
+  color: #880808;
+  padding-left: 14px;
+}
+.about .newspaper .right-column {
+  width: 50%;
+  min-height: 300px;
+}
+.about .newspaper .right-column img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.about .newspaper .right-column h3 {
+  font-family: Newspaper;
+  font-size: 24px;
+  color: #880808;
+  text-align: center;
+  padding-top: 15px;
+}
+.about .newspaper .right-column p {
+  font-family: IndieFlower;
+  font-size: 16px;
+  color: #880808;
+  padding-left: 14px;
+}
+
+.attractions {
+  width: 100%;
+  min-height: 200px;
+  margin: 0 auto;
+}
+.attractions .headliner {
+  width: 50%;
+  min-height: 150px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.attractions .headliner .headline {
+  background-color: lightgray;
+  border: 3px solid #000;
+}
+.attractions .headliner .headline h2 {
+  font-family: Newspaper;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 40px;
+  text-transform: uppercase;
+}
+.attractions .headliner .headline img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  opacity: 75%;
+}
+.attractions .newspaper {
+  width: 50%;
+  min-height: 300px;
+  background-color: lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  border: 3px solid #000;
+  margin-bottom: 50px;
+}
+.attractions .newspaper .left-column {
+  width: 50%;
+  min-height: 300px;
+  margin-top: 14px;
+  border-right: 1px solid #000;
+}
+.attractions .newspaper .left-column img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.attractions .newspaper .left-column h3 {
+  font-family: Newspaper;
+  font-size: 24px;
+  color: #880808;
+  text-align: center;
+  padding-top: 15px;
+}
+.attractions .newspaper .left-column p {
+  font-family: IndieFlower;
+  font-size: 16px;
+  color: #880808;
+  padding-left: 14px;
+}
+.attractions .newspaper .right-column {
+  width: 50%;
+  min-height: 300px;
+  margin-top: 14px;
+}
+.attractions .newspaper .right-column img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.attractions .newspaper .right-column h3 {
+  font-family: Newspaper;
+  font-size: 24px;
+  color: #880808;
+  text-align: center;
+  padding-top: 15px;
+}
+.attractions .newspaper .right-column p {
+  font-family: IndieFlower;
+  font-size: 16px;
+  color: #880808;
+  padding-left: 14px;
+}
+
+.schedule {
+  width: 100%;
+  min-height: 200px;
+  margin: 0 auto;
+}
+.schedule .headliner {
+  width: 50%;
+  min-height: 150px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.schedule .headliner .headline {
+  background-color: lightgray;
+  border: 3px solid #000;
+}
+.schedule .headliner .headline h2 {
+  font-family: Newspaper;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 40px;
+  text-transform: uppercase;
+}
+.schedule .headliner .headline img {
+  width: 100%;
+  height: 650px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+.schedule .newspaper {
+  width: 50%;
+  min-height: 300px;
+  background-color: lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  border: 3px solid #000;
+  margin-bottom: 50px;
+  margin-top: 25px;
+}
+.schedule .newspaper .left-column {
+  width: 50%;
+  min-height: 300px;
+  border-right: 1px solid #000;
+}
+.schedule .newspaper .left-column img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.schedule .newspaper .left-column h3 {
+  font-family: Newspaper;
+  font-size: 24px;
+  color: #880808;
+  text-align: center;
+  padding-top: 15px;
+}
+.schedule .newspaper .left-column p {
+  font-family: IndieFlower;
+  font-size: 16px;
+  color: #880808;
+  padding-left: 14px;
+}
+.schedule .newspaper .right-column {
+  width: 50%;
+  min-height: 300px;
+}
+.schedule .newspaper .right-column img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.schedule .newspaper .right-column h3 {
+  font-family: Newspaper;
+  font-size: 24px;
+  color: #880808;
+  text-align: center;
+  padding-top: 15px;
+}
+.schedule .newspaper .right-column p {
+  font-family: IndieFlower;
+  font-size: 16px;
+  color: #880808;
+  padding-left: 14px;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #880808;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+footer .location {
+  width: 15%;
+  height: 100px;
+  display: block;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+footer .location p {
+  font-family: IndieFlower;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: -5px;
+}
+footer .tickets {
+  width: 150px;
+  height: 50px;
+  background-color: #000;
+  border-radius: 20px;
+}
+footer .tickets h2 {
+  font-family: Creepster;
+  font-size: 24px;
+  color: #fff;
+  letter-spacing: 3px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+footer .copyright {
+  width: 25%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .copyright p {
+  font-family: IndieFlower;
+  font-size: 18px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 998px) {
+  footer {
+    height: 125px;
+  }
+  footer .location {
+    width: 20%;
+    margin-top: 5px;
+  }
+}
+@media only screen and (max-width: 715px) {
+  footer {
+    height: 150px;
+  }
+  footer .location {
+    margin-top: -25px;
+  }
+}
+@media only screen and (max-width: 515px) {
+  footer {
+    height: 175px;
+  }
+  footer .location {
+    margin-top: -70px;
+  }
+}

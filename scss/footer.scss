@@ -1,0 +1,90 @@
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #880808;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .location {
+        width: 15%;
+        height: 100px;
+        display: block;
+        margin-top: 30px;
+        margin-left: 50px;
+        // background-color: aliceblue;
+
+        p {
+            font-family: IndieFlower;
+            font-size: 18px;
+            color: #fff;
+            margin-bottom: -5px;
+        }
+    }
+
+    .tickets {
+        width: 150px;
+        height: 50px;
+        background-color: #000;
+        border-radius: 20px;
+        // background-color: aliceblue;
+
+        h2 {
+            font-family: Creepster;
+            font-size: 24px;
+            color: #fff;
+            letter-spacing: 3px;
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+    }
+
+    .copyright {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        // background-color: aliceblue;
+
+        p {
+            font-family: IndieFlower;
+            font-size: 18px;
+            color: #fff;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 998px ) {
+    footer {
+        height: 125px;
+
+        .location {
+            width: 20%;
+            margin-top: 5px;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 715px) {
+    footer {
+        height: 150px;
+
+        .location {
+            margin-top: -25px;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 515px) {
+    footer {
+        height: 175px;
+
+        .location {
+            margin-top: -70px;
+        }
+
+    }
+}
